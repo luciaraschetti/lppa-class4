@@ -1,0 +1,74 @@
+body {
+    font-family: "Source Sans Pro", sans-serif !important;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    background-image: url(../img/bg01.png);
+    padding: 50px;
+    font-size: 25px;
+    text-align: center;
+}
+
+span {
+    white-space: pre-wrap;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    padding: 30px;
+    background-color: #2B2B2B;
+}
+
+.menu .options ul li {
+    display: inline;
+    list-style-type: none;
+    margin: 15px;
+    text-align: center;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    color: #C0C0C0;
+}
+
+a#home,
+a#home:visited {
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.divider {
+    align-self: stretch;
+    height: 15px;
+    background-color: #37C0FB;
+}
