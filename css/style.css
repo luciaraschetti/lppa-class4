@@ -237,7 +237,6 @@ a:hover {
 .info-photos .box {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin: 20px;
@@ -377,6 +376,11 @@ a:hover {
     font-weight: 300;
 }
 
+.contact-container .contact-form form textarea {
+    width: 530px;
+    height: 160px;
+}
+
 .contact-container .contact-form form .contact-info {
     display: flex;
     flex-direction: row;
@@ -479,8 +483,29 @@ a:hover {
     font-size: 18px;
 }
 
-@media only screen and (max-width: 840px){
-    .header{
+@media only screen and (max-width: 1025px) {
+    .contact-container .contact-form {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .contact-container .contact-form form {
+        align-self: stretch;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-container .contact-form form textarea {
+        width: 98%;
+    }
+
+    .contact-container .contact-form button {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .header {
         display: none;
     }
 
@@ -492,5 +517,4 @@ a:hover {
         display: inline;
         font-size: 25px;
     }
-
 }
