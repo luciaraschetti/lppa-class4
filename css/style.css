@@ -101,3 +101,56 @@ a:hover {
 .img-container .img-overlay h3 {
     margin-right: 20px;
 }
+
+.info-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: stretch;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.info-icons .box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-self: stretch;
+    align-items: center;
+    justify-content: center;
+    width: 340px;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+.info-icons .box .border {
+    margin: 20px;
+    border-radius: 50%;
+    border: 1px solid rgb(219, 219, 219);
+    background-color: #fff;
+}
+
+.info-icons .box .border .icon {
+    border-radius: 50%;
+    padding: 22px;
+    margin: 7px;
+    background-image: url(../img/bg01.png);
+    background-color: #32B0E6;
+}
+
+.info-icons .box .title {
+    margin: 12px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #474747;
+}
+
+.info-icons .box .description {
+    margin: 12px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+    color: #64707a;
+}
