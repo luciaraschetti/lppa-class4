@@ -18,9 +18,10 @@ body {
     align-items: center;
     justify-content: center;
     align-self: stretch;
+    padding: 55px;
     background-image: url(../img/bg01.png);
-    padding: 50px;
-    font-size: 25px;
+    font-size: 28px;
+    color: #474747;
     text-align: center;
 }
 
@@ -41,14 +42,14 @@ span {
 .menu .options ul li {
     display: inline;
     list-style-type: none;
-    margin: 15px;
+    padding: 25px;
     text-align: center;
 }
 
 a,
 a:visited {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     color: #C0C0C0;
 }
@@ -79,7 +80,7 @@ a:hover {
     align-self: stretch;
     align-items: center;
     justify-content: flex-end;
-    height: 400px;
+    height: 450px;
     background-image: url(../img/banner.jpg);
     background-position: center center;
     background-size: cover;
@@ -91,15 +92,24 @@ a:hover {
     align-self: stretch;
     align-items: center;
     justify-content: center;
-    height: 95px;
+    padding: 30px;
     background-color: rgba(26, 26, 26, 0.733);
     font-size: 23px;
     text-align: center;
     color: #fff;
 }
 
-.img-container .img-overlay h3 {
-    margin-right: 20px;
+.img-container .img-overlay button {
+    margin-left: 15px;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 5px;
+    background-image: url(../img/bg01.png);
+    background-color: #36BEF8;
+    font-size: 20px;
+    color: #fff;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
 }
 
 .info-icons {
@@ -161,7 +171,7 @@ a:hover {
     align-self: stretch;
     align-items: center;
     justify-content: center;
-    padding: 70px;
+    padding: 90px 0px;
     background-image: url(../img/bg01.png);
     background-color: #FAFAFA;
     text-align: center;
@@ -181,4 +191,51 @@ a:hover {
     font-size: 27px;
     font-weight: 300;
     color: #9f9faa;
+}
+
+.info-photos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 55px 0px;
+    color: #474747;
+}
+
+.info-photos .box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.info-photos .box .photo img {
+    border-radius: 3%;
+}
+
+.info-photos .box .photo-description {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    align-items: flex-start;
+    justify-content: center;
+    width: 390px;
+    margin-left: 35px;
+}
+
+.info-photos .box .photo-description .title {
+    font-weight: 600;
+    font-size: 23px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.info-photos .box .photo-description .description {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
 }
