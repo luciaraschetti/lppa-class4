@@ -239,3 +239,34 @@ a:hover {
     font-size: 18px;
     line-height: 27px;
 }
+
+.button-heading {
+    display: flex;
+    flex-direction: row;
+    align-self: stretch;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 65px;
+    background-image: url(../img/bg01.png);
+    background-color: #34B6EF;
+}
+
+.button-heading .text {
+    margin-right: 20px;
+    font-weight: 600;
+    font-size: 40px;
+    color: #fff;
+}
+
+.button-heading button {
+    margin-left: 15px;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 20px;
+    color: #474747;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+}
