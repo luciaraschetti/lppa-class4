@@ -94,7 +94,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     padding: 30px;
-    background-color: rgba(26, 26, 26, 0.733);
+    background-color: #1a1a1ab7;
     font-size: 23px;
     text-align: center;
     color: #fff;
@@ -111,6 +111,26 @@ a:hover {
     color: #fff;
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 600;
+}
+
+.img-container .img-overlay button:hover {
+    background-color: #4DC9FF;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.img-container .img-overlay a,
+.img-container .img-overlay a:visited {
+    font-size: 23px;
+    text-decoration: none;
+    border-bottom: 1px dotted #c0c0c0;
+    color: #c0c0c0
+}
+
+.img-container .img-overlay a:hover {
+    transition: 0.4s;
+    color: deepskyblue;
+    border-bottom: none;
 }
 
 .info-icons {
@@ -139,7 +159,7 @@ a:hover {
 .info-icons .box .border {
     margin: 20px;
     border-radius: 50%;
-    border: 1px solid rgb(219, 219, 219);
+    border: 1px solid #dbdbdb;
     background-color: #fff;
 }
 
@@ -173,8 +193,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     padding: 90px 0px;
-    background-image: url(../img/bg01.png);
-    background-color: #FAFAFA;
+    background-image: radial-gradient(circle, #ffffff42, #e2e2e21c, #c7c7c70e, #ababab0a, #91919110), url(../img/bg01.png);
     text-align: center;
 }
 
@@ -272,6 +291,12 @@ a:hover {
     font-weight: 600;
 }
 
+.button-heading button:hover {
+    color: #4DC9FF;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
 .contact-container {
     display: flex;
     flex-direction: row;
@@ -281,6 +306,7 @@ a:hover {
     justify-content: space-evenly;
     padding: 60px;
     background-image: url(../img/bg01.png);
+    background-color: #fcfcfc;
 }
 
 .contact-container .links {
@@ -383,6 +409,12 @@ a:hover {
     font-weight: 600;
 }
 
+.contact-container .contact-form button:hover {
+    background-color: #535353;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
 .social-media {
     display: flex;
     flex-direction: row;
@@ -390,6 +422,7 @@ a:hover {
     justify-content: center;
     align-self: stretch;
     background-image: url(../img/bg01.png);
+    background-color: #fcfcfc;
 }
 
 .social-media img {
@@ -404,6 +437,7 @@ a:hover {
     align-self: stretch;
     padding: 10px 0px 150px 0px;
     background-image: url(../img/bg01.png);
+    background-color: #fcfcfc;
     font-size: 15px;
     color: #C0C0C0;
 }
@@ -412,7 +446,7 @@ a:hover {
     padding: 5px 10px;
     font-size: 18px;
     font-weight: 300;
-    border-right: 1px solid rgb(212, 212, 212);
+    border-right: 1px solid #d4d4d4;
 }
 
 .footer span:nth-child(3){
