@@ -21,9 +21,19 @@ body {
     justify-content: center;
     padding: 55px;
     background-image: url(../img/bg01.png);
+}
+
+.header a,
+.header a:visited {
+    text-decoration: none;
     font-size: 28px;
     color: #474747;
     text-align: center;
+}
+
+.header a:hover {
+    transition: 0.4s;
+    color: deepskyblue;
 }
 
 span {
@@ -421,6 +431,14 @@ a:hover {
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 300;
     font-size: 18px;
+}
+
+.contact-container .contact-form form .contact-info input[type=text]:focus,
+.contact-container .contact-form form .contact-info input[type=email]:focus,
+.contact-container .contact-form form #msg:focus {
+    outline: none;
+    border: 1px solid rgb(56, 189, 247);
+    transition: 0.2s;
 }
 
 .contact-container .contact-form form #msg {
