@@ -464,7 +464,7 @@ a:hover {
 }
 
 .contact-container .contact-form button:hover {
-    background-color: #535353;
+    background-color: #5e5e5e;
     transition: 0.4s;
     cursor: pointer;
 }
@@ -549,7 +549,10 @@ a:hover {
     }
 
     .menu {
-        padding-top: 30px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding-top: 25px;
     }
 
     .menu .options {
@@ -558,7 +561,7 @@ a:hover {
 
     .menu a span {
         display: inline;
-        font-size: 25px;
+        font-size: 30px;
     }
     
     .menu .container {
@@ -566,6 +569,7 @@ a:hover {
     }
 
     .menu .divider {
-        margin-top: 30px;
+        height: 10px;
+        margin-top: 25px;
     }
 }
