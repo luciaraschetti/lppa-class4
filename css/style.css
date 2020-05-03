@@ -1,5 +1,5 @@
 body {
-    font-family: "Source Sans Pro", sans-serif !important;
+    font-family: "Source Sans Pro", sans-serif;
     overflow-x: hidden;
 }
 
@@ -64,22 +64,22 @@ span {
     text-align: center;
 }
 
-a,
-a:visited {
+.menu .options ul li a,
+.menu .options ul li a:visited {
     text-decoration: none;
     font-size: 18px;
     font-weight: 300;
     color: #C0C0C0;
 }
 
-a#home,
-a#home:visited {
+.menu .options ul li a#home,
+.menu .options ul li a#home:visited {
     text-decoration: none;
     font-weight: 600;
     color: #fff;
 }
 
-a:hover {
+.menu .options ul li a:hover {
     text-decoration: none;
     color: #fff;
     transition: 0.3s;
@@ -435,13 +435,13 @@ a:hover {
 
 .contact-container .contact-form form .contact-info input[type=text]:focus,
 .contact-container .contact-form form .contact-info input[type=email]:focus,
-.contact-container .contact-form form #msg:focus {
+.contact-container .contact-form form textarea#msg:focus {
     outline: none;
     border: 1px solid rgb(56, 189, 247);
     transition: 0.2s;
 }
 
-.contact-container .contact-form form #msg {
+.contact-container .contact-form form textarea#msg {
     border: 1px solid #C0C0C0;
     border-radius: 5px;
     padding: 15px 5px 10px 10px;
@@ -490,6 +490,7 @@ a:hover {
 .social-media a.sm-icon,
 .social-media a.sm-icon:visited {
     margin: 13px;
+    text-decoration: none;
     font-family: 'icomoon';
     font-size: 38px;
     color: #999999;
