@@ -32,11 +32,10 @@ span {
 
 .menu {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     align-self: stretch;
-    padding: 30px;
     background-color: #2B2B2B;
 }
 
@@ -45,12 +44,13 @@ span {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    padding: 35px 30px 15px 30px;
 }
 
 .menu .options ul li {
     display: inline;
     list-style-type: none;
-    padding: 25px;
+    padding: 0px 25px;
     text-align: center;
 }
 
@@ -80,9 +80,28 @@ a:hover {
     display: none;
 }
 
-.divider {
-    align-self: stretch;
-    height: 15px;
+.menu .container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 720px;
+}
+
+.menu .container .pointer {
+    flex: 0;
+    width: 0;
+    height: 0;
+    border: 8px solid #37C0FB;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+}
+
+.menu .divider {
+    width: 100%;
+    height: 13px;
+    background-image: url(../img/bg01.png);
     background-color: #37C0FB;
 }
 
@@ -511,6 +530,10 @@ a:hover {
         display: none;
     }
 
+    .menu {
+        padding-top: 30px;
+    }
+
     .menu .options {
         display: none;
     }
@@ -518,5 +541,13 @@ a:hover {
     .menu a span {
         display: inline;
         font-size: 25px;
+    }
+    
+    .menu .container {
+        display: none;
+    }
+
+    .menu .divider {
+        margin-top: 30px;
     }
 }
