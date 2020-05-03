@@ -469,6 +469,14 @@ a:hover {
     cursor: pointer;
 }
 
+@font-face {
+    font-family: 'icomoon';                
+    src: url('../sm-icons/icomoon.eot?#iefix') format('embedded-opentype'), 
+         url('../sm-icons/icomoon.ttf'),
+         url('../sm-icons/icomoon.eot');
+}
+
+
 .social-media {
     display: flex;
     flex-direction: row;
@@ -479,8 +487,43 @@ a:hover {
     background-color: #fcfcfc;
 }
 
-.social-media img {
-    margin: 12px;
+.social-media a.sm-icon,
+.social-media a.sm-icon:visited {
+    margin: 13px;
+    font-family: 'icomoon';
+    font-size: 38px;
+    color: #999999;
+}
+
+.social-media a.sm-icon:hover {
+    color: #4C4C4C;
+    transition: 0.3s;
+}
+
+.social-media a.sm-icon:last-child {
+    margin: 18px 13px 13px 13px;
+    font-family: 'icomoon';
+    font-size: 47px;
+}
+
+.social-media a.sm-icon::before {
+    content: "\ea96";
+}
+
+.social-media a.sm-icon:nth-child(2)::before {
+    content: "\ea90";
+}
+
+.social-media a.sm-icon:nth-child(3)::before {
+    content: "\eab0";
+}
+
+.social-media a.sm-icon:nth-child(4)::before {
+    content: "\eaca";
+}
+
+.social-media a.sm-icon:nth-child(5)::before {
+    content: "\ea8b";
 }
 
 .footer {
