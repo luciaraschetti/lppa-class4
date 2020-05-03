@@ -107,6 +107,7 @@ a:hover {
     padding: 30px;
     background-color: #1a1a1ab7;
     font-size: 23px;
+    line-height: 30px;
     text-align: center;
     color: #fff;
 }
@@ -210,7 +211,7 @@ a:hover {
 
 .heading-container h1 {
     margin: 10px;
-    padding: 30px 200px;
+    padding: 30px 90px;
     font-size: 42px;
     font-weight: 600;
     color: #474747;
@@ -283,9 +284,10 @@ a:hover {
 }
 
 .button-heading .text {
-    margin-right: 20px;
+    margin: 20px;
     font-weight: 600;
     font-size: 40px;
+    text-align: center;
     color: #fff;
 }
 
