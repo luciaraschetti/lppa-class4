@@ -1,6 +1,5 @@
 body {
     font-family: "Source Sans Pro", sans-serif;
-    overflow-x: hidden;
 }
 
 .wrapper {
@@ -9,7 +8,6 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width: 100vw;
     min-height: 100vh;
 }
 
@@ -86,8 +84,11 @@ span {
     cursor: pointer;
 }
 
-.menu a span {
+.menu a.title,
+.menu a.title:visited {
     display: none;
+    text-decoration: none;
+    color: #fff;
 }
 
 .menu .container {
@@ -603,9 +604,12 @@ span {
         display: none;
     }
 
-    .menu a span {
+    .menu a.title,
+    .menu a.title:visited {
         display: inline;
         font-size: 30px;
+        color: #fff;
+        text-decoration: none;
     }
     
     .menu .container {
