@@ -357,8 +357,8 @@ span {
     flex-wrap: wrap;
     align-self: stretch;
     align-items: center;
-    justify-content: space-evenly;
-    padding: 60px;
+    justify-content: space-around;
+    padding: 30px;
     background-image: url(../img/bg01.png);
     background-color: #fcfcfc;
 }
@@ -368,12 +368,13 @@ span {
     flex-direction: column;
     align-items: left;
     justify-content: center;
+    align-self: flex-start;
 }
 
 .contact-container .links h4 {
     font-weight: 600;
     font-size: 23px;
-    padding: 20px 25px 30px 13px;
+    padding: 20px 25px 20px 13px;
     color: #474747;
 }
 
@@ -399,14 +400,14 @@ span {
 .contact-container .contact-form {
     display: flex;
     flex-direction: column;
-    align-self: baseline;
     align-items: flex-start;
     justify-content: center;
+    align-self: flex-start;
     padding-top: 20px;
 }
 
 .contact-container .contact-form h4 {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     font-weight: 600;
     font-size: 23px;
     color: #474747;
@@ -420,30 +421,29 @@ span {
     font-weight: 300;
 }
 
-.contact-container .contact-form form textarea {
-    width: 530px;
-    height: 160px;
-}
-
 .contact-container .contact-form form .contact-info {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: flex-start;
     margin-bottom: 10px;
+    width: 100%;
 }
 
 .contact-container .contact-form form .contact-info input[type=text],
 .contact-container .contact-form form .contact-info input[type=email] {
     border: 1px solid #C0C0C0;
     border-radius: 5px;
-    width: 46%;
+    width: 50%;
     padding: 15px 5px 10px 10px;
+    margin-bottom: 5px;
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 300;
     font-size: 18px;
+}
+
+.contact-container .contact-form form .contact-info input[type=text] {
+    margin-right: 15px;
 }
 
 .contact-container .contact-form form .contact-info input[type=text]:focus,
@@ -457,6 +457,8 @@ span {
 .contact-container .contact-form form textarea#msg {
     border: 1px solid #C0C0C0;
     border-radius: 5px;
+    width: 560px;
+    height: 150px;
     padding: 15px 5px 10px 10px;
     margin-bottom: 10px;
     font-family: "Source Sans Pro", sans-serif;
@@ -591,8 +593,8 @@ span {
         align-items: center;
         justify-content: center;
     }
-    .contact-container .contact-form form textarea {
-        width: 98%;
+    .contact-container .contact-form form textarea#msg {
+        width: 98.5%;
     }
 
     .contact-container .contact-form button {
@@ -649,5 +651,33 @@ span {
 
     .info-photos .container {
         flex-direction: column;
+    }
+
+    .contact-container{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .contact-container .contact-form h4 {
+        align-self: flex-start;
+        padding: 15px 0;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+
+    .contact-container .contact-form form .contact-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-container .contact-form form textarea#msg {
+        width: 97%;
+    }
+
+    .contact-container .contact-form form .contact-info input[type=text],
+    .contact-container .contact-form form .contact-info input[type=email] {
+        width: 97%;
     }
 }
